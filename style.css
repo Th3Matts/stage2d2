@@ -3,33 +3,38 @@ body {
   
     font-family: "Open Sans", sans-serif;
   
-    background: linear-gradient(90deg, rgb(227, 255, 248, 0) 82.08%, rgb(227, 255, 248, 0.38) 100%);
+    background: linear-gradient(180deg, rgba(227, 255, 248, 0.00) 82.08%, rgba(227, 255, 248, 0.38) 100%);
   
     min-height: 100vh;
+
   }
   
   .page {
-    width: 600px;
+    width: 1000px;
     margin: 0 auto;
     padding-top: 65px;
   }
   
   nav {
+    width: 1000px;
+
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
     align-items: center;
   
-    margin-bottom: 15px;
+    margin:0 auto 60px;
   }
   
   ul {
     display: flex;
     list-style: none;
+    gap: 48px;
     margin: 0;
     padding: 0;
   }
   
   a {
+    font-size: 18px;
     color: #1f1534;
     text-decoration: none;
   }
@@ -41,6 +46,15 @@ body {
   ul li a:hover {
     font-weight: bold;
     opacity: 1;
+  }
+
+  main{
+    width: 1000px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   
   h1,
@@ -62,8 +76,9 @@ body {
     color: #89c5cc;
     font-weight: bold;
   }
-  
+
   section p {
+    width: 430px;
     font-size: 14px;
     line-height: 28px;
     color: #7d7987;
@@ -74,14 +89,17 @@ body {
   button {
     color: white;
     font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
   
     background: #69B99D;
     border: 0;
-    padding: 0 50px 30px;
+    padding: 14px 32px 15px;
   
     display: flex;
-    justify-content: space-around;
-    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
   
     border-radius: 4px;
   
@@ -102,11 +120,13 @@ body {
   }
   
   footer a {
+    font-size: 14px;
     font-weight: bold;
   }
   
   #balls {
-      bottom: 0;
-      right: 0;
+    position: fixed;
+    bottom: 0;
+    right: 0;
   }
   
